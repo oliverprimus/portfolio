@@ -4,12 +4,16 @@ body {
 }
 
 .header {
+background-image: url("./images/2.jpg");
+background-repeat: no-repeat;
+background-size: cover;
 }
 
 .header h1 {
   font-size: 200px;
   text-align: center;
   color: rgba(0, 0, 0, 0.85);
+
 }
 
 footer {
@@ -25,4 +29,32 @@ footer {
 a {
   color: rgba(0, 0, 0, 0.85);
   text-decoration: none;
+}
+
+h1 {
+  position: relative;
+  bottom: 120px;
+}
+
+.container {
+  height: auto;
+  width: 100%;
+  display: flex;
+  margin-bottom: 100px;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+
+img {
+  width: auto;
+  max-width: 450px;
+  height: auto;
+  flex-grow: 1;
+  flex-shrink: 2;
+  padding: 20px;
+}
+
+#spacearound {
+  justify-content: space-around;
+  align-items: center;
 }
