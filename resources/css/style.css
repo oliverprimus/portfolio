@@ -4,7 +4,7 @@ body {
 }
 
 h1 {
-  font-size: 5rem;
+  font-size: 4.5rem;
 }
 
 h2 {
@@ -58,13 +58,16 @@ padding-top: 4rem;
 }
 
 .title {
-  min-width: 30%;
+  width: 30%;
   flex-direction: column;
   align-self: center;
   display: inline-flex;
-  padding: 2rem;
   background-color: rgb(10, 123, 255);
   color: rgb(255, 255, 255);
+}
+
+.title h1 {
+padding: 4rem;
 }
 
 
