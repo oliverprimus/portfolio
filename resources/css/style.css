@@ -3,17 +3,22 @@ body {
   font-family: 'Archivo Black', sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
 h1 {
-  font-size: 4.5rem;
+  font-size: 3rem;
 }
 
 h2 {
-  font-size: 4rem;
+  font-size: 2rem;
   color: rgb(255, 255, 255);
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: rgb(255, 255, 255);
   padding: 1rem 0;
 }
@@ -43,6 +48,10 @@ nav img {
 margin-right: 2rem;
 }
 
+.dropdown {
+  display: none;
+}
+
 
 /*About*/
 #about {
@@ -58,17 +67,16 @@ padding-top: 4rem;
 }
 
 .title {
-  width: 30%;
+  width: 20%;
   flex-direction: column;
   align-self: center;
   display: inline-flex;
+  padding: 2rem;
+  margin-right: 2rem;
   background-color: rgb(10, 123, 255);
   color: rgb(255, 255, 255);
 }
 
-.title h1 {
-padding: 4rem;
-}
 
 
 
@@ -94,9 +102,10 @@ margin-top: 2rem;
 
 .work-container {
 width: 30%;
-height: 30rem;
+min-height: 31rem;
 background-color: rgb(227, 121, 236);
 margin: 0 .5rem 2rem .5rem;
+border-radius: 0.75rem;
 /*overflow: hidden;*/
 }
 
@@ -142,4 +151,124 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+
+/*Media Screen*/
+@media only screen and (max-width:850px) {
+.title {
+  min-width: 20%;
+}
+
+h1 {
+  font-size: 2rem;
+}
+}
+
+
+@media only screen and (max-width:714px) {
+#about img {
+  display: none;
+}
+.title {
+  width: 100%;
+  margin: auto 0;
+  text-align: center;
+    background-color: rgb(242, 118, 38);
+}
+
+#about {
+  padding-top: 3rem;
+
+}
+
+nav img {
+  width: 4rem;
+  margin-left: 1.25rem;
+}
+
+.social img {
+width: 2rem;
+margin: 1rem 1rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+#contact {
+  padding: 1rem;
+}
+
+#portfolio {
+padding-top: 0rem;
+margin-top: -1rem;
+}
+
+h2 {
+  display: none;
+}
+
+.work-information {
+  width: 100%;
+    margin-bottom: 0rem;
+}
+
+.work-container {
+  width: 100%;
+margin-bottom: 1rem;
+background-color: rgb(10, 123, 255);
+}
+
+.links span {
+  display: none;
+}
+
+
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: rgb(10, 123, 255);
+    color: white;
+    padding: 0.5rem;
+height: 3.1rem;
+width: 6.5rem;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+        margin-right: -2rem;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 20;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+
+}
+
+.dropdown:hover .dropbtn {
+    background-color: rgb(255, 4, 4);
+}
 }
